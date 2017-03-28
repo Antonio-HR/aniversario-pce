@@ -154,10 +154,13 @@ p span{
   			};
         	timeline = new TL.Timeline('timeline-embed',
           	'https://docs.google.com/spreadsheets/d/1Zp_n9sv4XQukgxGz8PO69F0S2gaJYk5W7kJ6sEeWf9A/pubhtml', options);
-          	var separator = document.getElementById('separator');
-        	document.getElementsByClassName('tl-slidenav-content-container').onclick = function(){
+          	var push = document.getElementsByClassName('tl-slidenav-content-container');
+        	push[0].onclick = function(){
         		separator.scrollIntoView();
-        	} 
+        	}
+        	push[1].onclick = function(){
+        		separator.scrollIntoView();
+        	}
         }
       </script>
   
