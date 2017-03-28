@@ -155,11 +155,10 @@ p span{
         	timeline = new TL.Timeline('timeline-embed',
           	'https://docs.google.com/spreadsheets/d/1Zp_n9sv4XQukgxGz8PO69F0S2gaJYk5W7kJ6sEeWf9A/pubhtml', options);
           	var push = document.getElementsByClassName('tl-slidenav-content-container');
-        	push[0].onclick = function(){
+        	for(var i = 0; i < push.length; i++){
+        		push[i].onclick = function(){
         		separator.scrollIntoView();
-        	}
-        	push[1].onclick = function(){
-        		separator.scrollIntoView();
+        		}
         	}
         }
       </script>
